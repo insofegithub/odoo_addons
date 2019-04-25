@@ -1,0 +1,17 @@
+<odoo>
+    <data> 
+      <!-- improved CRM Team FORM view -->
+        <record id="sales_team_form_view_in_crm_insofe" model="ir.ui.view">
+            <field name="name">crm.team.form.inherit.insofe</field>
+            <field name="model">crm.team</field>
+            <field name="inherit_id" ref="crm.sales_team_form_view_in_crm"/>
+            <field name="arch" type="xml">
+                <field name="alias_contact" position="after">
+                    <field name="in_stage_default_id"/>
+                </field>
+            </field>
+        </record>   
+  </data> 
+</odoo>
+
+     
